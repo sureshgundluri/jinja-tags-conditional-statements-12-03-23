@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+</head>
+<body>
+    <h1>conditional statements</h1>
+    <!-- {% if b < 3000 %}
+    <h1> i am in block</h1>
+     <h1>{{a}}</h1>
+     <h1>{{b}}</h1>
+     <h1>{{c}}</h1>
+    {% else %}
+    <h1>the condition is not satisfied</h1>
+    {% endif %} -->
+    <!-- <h1>if-elif condition</h1>
+    {% if a > b and a > c%}
+    <h1>if condition</h1>
+    <h1>{{a}}</h1>
+    {% elif b > c %}
+    <h1>elif condition</h1>
+    <h1>{{b}}</h1>
+    {% else %}
+    <h1>else condition</h1>
+    <h1>{{c}}</h1>
+    {% endif %} -->
+    <h1>nested coditions</h1>
+    {% if a > b %}
+        {% if a > c %}
+        <h1>a is max</h1>
+        <h1>{{a}}</h1>
+        {% else %}
+        <h1>c is max</h1>
+        <h1>{{c}}</h1>
+        {% endif %}
+    {% else %}
+        {% if b > c %}
+        <h1>b is max</h1>
+        <h1>{{b}}</h1>
+        {% else %}
+        <h1>  c is max</h1>
+        <h1>{{c}}</h1>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
